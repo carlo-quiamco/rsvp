@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RSVP</title>
+  <link rel="icon" href="./img/final-logo.png" type="image/icon type">
+  <title>She's Got Next 2023 by NKSFB</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
@@ -19,12 +20,12 @@
       <div class="">
         <div class="row h-100">
           
-          <div class="col-lg-6 col-md-6 pt-5 pb-2 p-3">
+          <div class="col-lg-7 col-md-7 pt-5 pb-2 p-3">
               <div class="">
                   <div class="d-flex justify-content-center">
-                    <img src="./img/final-logo.png" width="200px" alt="">
+                    <img src="./img/final-logo.png" width="150px" alt="">
                   </div>
-                  <div class="d-flex justify-content-center mt-2 p-4">
+                  <div class="d-flex justify-content-center mt-2 p-4 ">
                     <video id="myVideo" class="video-js" style="width: 100%; height: auto; border-radius: 10px;" controls autoplay muted loop playsinline preload="auto">
                       <source src="./video/final_video_rsvp.mp4" type="video/mp4" />
                       <source src="./video/final_video_rsvp.webm" type="video/webm" />
@@ -34,127 +35,93 @@
               </div>
 
           </div>
-          <div class="col-lg-6 col-md-6 align-items-center main-banner" style="height: 800px !important;">
+          <div class="col-lg-5 col-md-5 align-items-center main-banner" style="height: 800px !important; overflow-y: auto;">
             <div class="container p-5">
-              <div class="pt-2">
-                <h3 class="text-white AvertaExtraRegular m-0" style="font-weight: bold;">Welcome to She's Got Next 2023!</h3>
-                <h3 class="text-white AvertaExtraRegular m-0" style="font-weight: bold;">The NKSFB Wealth Summit</h3>
+              <div class="pt-3">
+                <h4 class="text-white AvertaExtraRegular m-0" style="font-weight: bold;">Please join us for She's Got Next 2023!</h4>
+                <h4 class="text-white AvertaExtraRegular m-0" style="font-weight: bold;">Sponsored by NKSFB Sports</h4>
                 <br>
-  
-                <h5 class="text-white AvertaRegular">Wednesday, June 21, 10am - 2pm</h5>
-                <h5 class="text-white m-0 AvertaRegular">Nassau Bahamas</h5>
-                <p class="mt-2 text-white m-0 AvertaRegular" style="opacity: 70%;">Mandatory RSVP by May 26th</p>
-                <p class="text-white m-0 AvertaRegular" style="opacity: 70%;">By invitation only</p>
-                <p class="mb-2 text-white AvertaRegular" style="opacity: 70%;">Further Details Provided Upon RSVP</p>
+              
+                <!-- <p class="mb-2 text-white AvertaRegular" style="opacity: 70%;">Further Details Provided Upon RSVP</p>
+   -->
+                <h5 class="text-white AvertaRegular">Wednesday, June 21st <br> 11:30 AM - 3:00 PM <br> Invitation Only</h5>
+                <!-- <h5 class="text-white m-0 AvertaRegular">The NKSFB Wealth Summit:</h5>
+                <p class="mt-2 text-white m-0 AvertaRegular" style="opacity: 70%;">June 19th - Opening Reception: The NKSFB Wealth Summit (Evening)</p>
+                <p class="text-white m-0 AvertaRegular" style="opacity: 70%;">June 20th - General Session: The NKSFB Wealth Summit (9am - 3pm)</p>
+                <p class="m-0 text-white AvertaRegular" style="opacity: 70%;">* Includes Breakfast and Lunch - Schedule to follow</p>
+                <p class="mb-2 text-white AvertaRegular" style="opacity: 70%;">June 21st - Men's Sports Outing/She'sGotNext</p> -->
+
+                <h6 class="m-0 text-white AverteBold" >Baha Mar, The Grand Hyatt Hotel</h6>
+                <p class="mb-0 text-white AvertaRegular" >Nassau, Bahamas</p>
+                <p class="mb-0 text-white AvertaRegular">Passports required to travel to Bahamas</p>
                 
                 <hr class="solid" style="color: white;">
               </div>
-              <div>
-                <form id="login">
-                  <div class="mb-3 mt-5">
-                    <input type="password" class="form-control p-3 text-center text-white" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border: 1px solid white;" id="password" name="password" placeholder="Please enter code to proceed" required>
-                  </div>
-                  <p class="text-white" style="opacity: 70%;"> Please check your email for the code</p>
-                  <button type="submit" class="btn btn-primary p-3 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white;">I will Attend</button>
+              
+              <div id="attend" class="mt-5">
+                <div>
+                  <button  onclick="location.href='form.html'" class="btn btn-primary p-3 AvertaExtraBold mb-2" style="width: 300px; background-color: #973070; color: white; border-radius: 0%; border-color: #973070; border-radius: 15px;">I will Attend</button>
+                </div>
+
+                <div>
+                  <button onclick="notAttend()" class="btn btn-primary p-3 AvertaExtraBold mb-2" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white; border-radius: 15px;">I will Not Attend</button>
+                </div>
+
+                <div>
+                  <button  onclick="maybe()" class="btn btn-primary p-3 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white; border-radius: 15px;">Maybe</button>
+                </div>
+
+                <p class="p-3 text-white AvertaRegular"> <i>Mandatory RSVP by June 1st</i> </p>
+              </div>
+
+           
+           
+
+              <form id="willNotAttend" style="display: none;">
+                <div class="mb-3 ">
+                  <input type="text" class="form-control p-3 text-center text-white" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border: 1px solid white;" id="fname" name="fname" placeholder="FIRST NAME" required>
+                  <input type="hidden" name="status" id="status" value="2">
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control p-3 text-center text-white" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border: 1px solid white;" id="lname" name="lname" placeholder="LAST NAME" required>
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control p-3 text-center text-white" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border: 1px solid white;" id="reason" name="reason" placeholder="REASON" required>
+                </div>
                 
                 
-                </form>
-    
-    
-                <form id="form2" style="display: none;">
-                  <div class="form-group">
-                    <input type="text" class="form-control p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white;" id="firstname" name="firstname" placeholder="First Name" required>
-                    <input type="text" class="form-control p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white;" id="lastname" name="lastname" placeholder="Last Name" required>
-                    <input type="text" class="form-control p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white;" id="email" name="email" placeholder="Email Address" required>
-                    <input type="number" class="form-control p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white;" id="mobile" name="mobile" placeholder="Mobile Number" required>
-                    <input type="text" class="form-control p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white;" id="address" name="address" placeholder="Address" required>
-                    <input type="text" class="form-control p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white;" id="country" name="country" placeholder="Country" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary p-3 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white;">PROCEED TO SURVEY</button>
-                  
-                </form>
-    
-                <form id="survey1" style="display: none;">
-                  <div>
-                      <p class="text-white AvertaRegular m-0">Question 1</p>
-                      <p class="text-white AvertaBold m-0">She's Got Next was designed for the unique needs of wives and mothers of athletes. What is your affiliation with a premiere or professional athlete?</p>
-                      <p class="text-white AvertaRegular " style="opacity: 70%;">Select multiple answers if your are both a mother and spouse of a professional athlete</p>
-
-                      <p class="text-white AvertaRegular " style="opacity: 70%;">Choose as many as you like: </p>
-                  </div>
-                  
-                    
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check">Wife</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check2" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check2">Mother</label>
-                    </div> 
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check3" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check3">Father</label>
-                    </div>
-                    
-                    
+                <button type="submit" class="btn btn-primary p-3 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white;">Submit</button>
+              </form>
+  
+               <form id="maybeForm" style="display: none;">
+                <div class="mb-3 ">
+                  <input type="text" class="form-control p-3 text-center text-white" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border: 1px solid white;" id="fname" name="fname" placeholder="FIRST NAME" required>
+                  <input type="hidden" name="status" id="status" value="3">
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control p-3 text-center text-white" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border: 1px solid white;" id="lname" name="lname" placeholder="LAST NAME" required>
+                </div>
+                <div class="mb-3 mt-3">
+                  <input type="text" class="form-control p-3 text-center text-white" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border: 1px solid white;" id="reason" name="reason" placeholder="REASON" required>
+                </div>
+                
+                
+                <button type="submit" class="btn btn-primary p-3 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white;">Submit</button>
+              </form>
+              <form id="login" style="display: none;">
+                <div class="mb-3 mt-5">
+                  <input type="password" class="form-control p-3 text-center text-white" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border: 1px solid white;" id="password" name="password" placeholder="Please enter code to proceed" required>
+                </div>
+                <p class="text-white" style="opacity: 70%;"> Please check your email for the code</p>
+                
+                <button type="submit" class="btn btn-primary p-3 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white;">Submit Code</button>
+              </form>
              
-                  <button type="submit" class="btn btn-primary p-2 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white;">NEXT QUESTION</button>
-                </form>
-                <form id="survey2" style="display: none;">
-                  <div>
-                      <p class="text-white AvertaRegular m-0">Question 2</p>
-                      <p class="text-white AvertaBold m-0">She's Got Next was designed for the unique needs of wives and mothers of athletes. What is your affiliation with a premiere or professional athlete?</p>
-                      <p class="text-white AvertaRegular " style="opacity: 70%;">Select multiple answers if your are both a mother and spouse of a professional athlete</p>
-
-                      <p class="text-white AvertaRegular " style="opacity: 70%;">Choose as many as you like: </p>
-                  </div>
-                  
-                    
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check">Wife</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check2" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check2">Mother</label>
-                    </div> 
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check3" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check3">Father</label>
-                    </div>
-                    
-                    
-             
-                  <button type="submit" class="btn btn-primary p-2 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white;">NEXT QUESTION</button>
-                </form>
-                <form id="survey5" style="display: none;">
-                  <div>
-                      <p class="text-white AvertaRegular m-0">Question 5</p>
-                      <p class="text-white AvertaBold m-0">What is your athlete's name, sport and team affiliation?</p>
-                      <p class="text-white AvertaRegular " style="opacity: 70%;">Please include your athlete's full name, sport AND where he plays if applicable</p>
-
-                      <input type="textarea" name="question5" id="question5">
-                  </div>
-                  
-                    
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check">Wife</label>
-                    </div>
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check2" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check2">Mother</label>
-                    </div> 
-                    <div>
-                      <input type="checkbox" class="btn-check"  id="btn-check3" autocomplete="off" multiple>
-                      <label class="btn btn-primary p-3 text-center text-white mb-2" style="width: 300px; background-color: transparent; border-radius: 0%; color: white; border-color: white;" for="btn-check3">Father</label>
-                    </div>
-                    
-                    
-             
-                  <button type="submit" class="btn btn-primary p-2 AvertaExtraBold" style="width: 300px; background-color: white; color: #973070; border-radius: 0%; border-color: white;">NEXT QUESTION</button>
-                </form>
+              <div class="">
+                <div class="pt-5 py-5"></div>
+                <a href="https://www.nksfb.com/" class="m-0 AvertaRegular text-white " target="_blank">www.nksfb.com</a>
+                <br>
+                <a href="#" class="m-0 AvertaRegular text-white">shegotnext@pm.me</a>
               </div>
          
             </div>  
@@ -165,21 +132,57 @@
     </div>
   </section>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script>
+  
 
 var player = videojs('myVideo');
     player.play();
-	
+  
+    function willAttend()
+    {
+      $('#survey1').attr("style", "display:block");
+      $('#attend').attr("style", "display:none");
+    }
+
+    function notAttend()
+    {
+      $('#willNotAttend').attr("style", "display:block");
+      $('#attend').attr("style", "display:none");
+    }
+
+    function maybe()
+    {
+      $('#maybeForm').attr("style", "display:block");
+      $('#attend').attr("style", "display:none");
+    }
 		document.getElementById("login").addEventListener("submit", function(event) {
 			event.preventDefault(); // Prevent form from submitting
 
 			// Get username and password input values
 			var password = document.getElementById("password").value;
 
-			if (password === "mypassword") {
+			if (password === "RSVPSGN2023!") {
         login.style.display = "none";
-        form2.style.display = "block";
+        survey1.style.display = "block";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
       } else {
         // Show error message
         var errorMessage = document.createElement("p");
@@ -189,24 +192,414 @@ var player = videojs('myVideo');
       }
       });
 
-      document.getElementById("form2").addEventListener("submit", function(event) {
-			event.preventDefault(); // Prevent form from submitting
-
-        login.style.display = "none";
-        form2.style.display = "none";
-        survey1.style.display = "block";
-        
-			
-      });
-
       document.getElementById("survey1").addEventListener("submit", function(event) {
 			event.preventDefault(); // Prevent form from submitting
 
         login.style.display = "none";
-        form2.style.display = "none";
         survey1.style.display = "none";
-        survey2.style.display = "block";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "block";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
         
+			
+      });
+
+      
+      document.getElementById("survey5").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "block";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+      document.getElementById("survey6").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "block";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+      document.getElementById("survey7").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "block";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+      document.getElementById("survey8").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "block";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey9").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "block";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey10").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "block";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey11").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "block";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey12").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "block";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+      document.getElementById("survey13").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "block";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey14").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "block";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey15").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "block";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey16").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "block";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey17").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "block";
+        survey19.style.display = "none";
+			
+      });
+
+      document.getElementById("survey18").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "block";
+			
+      });
+      document.getElementById("survey19").addEventListener("submit", function(event) {
+			event.preventDefault(); // Prevent form from submitting
+
+      login.style.display = "none";
+        survey1.style.display = "none";
+        // survey2.style.display = "none";
+        // survey3.style.display = "none";
+        // survey4.style.display = "none";
+        survey5.style.display = "none";
+        survey6.style.display = "none";
+        survey7.style.display = "none";
+        survey8.style.display = "none";
+        survey9.style.display = "none";
+        survey10.style.display = "none";
+        survey11.style.display = "none";
+        survey12.style.display = "none";
+        survey13.style.display = "none";
+        survey14.style.display = "none";
+        survey15.style.display = "none";
+        survey16.style.display = "none";
+        survey17.style.display = "none";
+        survey18.style.display = "none";
+        survey19.style.display = "none";
+        save.style.display = "block";
 			
       });
 	</script>

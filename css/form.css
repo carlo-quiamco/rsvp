@@ -1,0 +1,469 @@
+@font-face {
+    font-family: "AvertaExtraBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-ExtraBold.ttf");
+}
+
+.main-banner {
+    background-image: url('../img/background-image.jpeg')!important;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+}
+input::placeholder {
+    color: white !important;
+    opacity: 85% !important;
+  }
+@font-face {
+    font-family: "AvertaRegular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AvertaBlack";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Black.ttf");
+}
+
+@font-face {
+    font-family: "AvertaLight";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Light.ttf");
+}
+
+@font-face {
+    font-family: "AvertaBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Bold.ttf");
+}
+
+@font-face {
+    font-family: "AvertaSemiBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Semibold.ttf");
+}
+
+a.nav-link{
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.f-30 {
+    font-size: 30px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.AvertaSemiBold {
+    font-family: 'AvertaSemiBold';
+}
+
+.AvertaLight {
+    font-family: 'AvertaLight';
+}
+
+.AvertaBold {
+    font-family: 'AvertaBold';
+}
+
+.AvertaBlack {
+    font-family: 'AvertaBlack';
+}
+
+::placeholder {
+    color: white;
+}
+
+.AvertaExtraBold {
+    font-family: 'AvertaExtraBold';
+}
+
+.AvertaRegular{
+    font-family: 'AvertaRegular';
+}
+
+.title {
+    font-size: 50px;
+}
+
+ul#ul-navigation-footer li {
+    padding-right:5px!important;
+    padding-left:5px!important;
+}
+
+@media only screen and (max-width: 991px) {
+    div#navbar {
+        position: absolute;
+        background: #e3426f;
+        z-index: 99999;
+        left: -91px;
+        right: 0;
+        top: 49px;
+    }
+
+
+    div#mobile-between {
+        justify-content: space-between!important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center!important;
+    }
+
+    section.header.header-2nd {
+        background-color: #e56387!important;
+    }
+
+    h2#mobile-show {
+        display: block!important;
+    }
+
+    section.header.hide-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    ul#ul-navigation-footer li {
+        padding-right:5px!important;
+        padding-left:5px!important;
+    }
+
+    div#footer-div-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    div#footer-div-logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    ul#ul-navigation-footer {
+        display: block!important;
+    }
+
+    div#footer-menu {
+        display: flex;
+        justify-content: center!important;
+    }
+    
+    ul#ul-navigation-footer li a {
+        text-align:center;
+    }
+    
+    ul#ul-navigation-footer {
+         padding:0px!important;
+    }
+}
+
+@font-face {
+    font-family: "AvertaExtraBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-ExtraBold.ttf");
+}
+
+input::placeholder {
+    color: white !important;
+    opacity: 85% !important;
+  }
+@font-face {
+    font-family: "AvertaRegular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AvertaBlack";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Black.ttf");
+}
+
+@font-face {
+    font-family: "AvertaLight";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Light.ttf");
+}
+
+@font-face {
+    font-family: "AvertaBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Bold.ttf");
+}
+
+@font-face {
+    font-family: "AvertaSemiBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Semibold.ttf");
+}
+
+a.nav-link{
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.f-30 {
+    font-size: 30px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.AvertaSemiBold {
+    font-family: 'AvertaSemiBold';
+}
+
+.AvertaLight {
+    font-family: 'AvertaLight';
+}
+
+.AvertaBold {
+    font-family: 'AvertaBold';
+}
+
+.AvertaBlack {
+    font-family: 'AvertaBlack';
+}
+
+::placeholder {
+    color: white;
+}
+
+.AvertaExtraBold {
+    font-family: 'AvertaExtraBold';
+}
+
+.AvertaRegular{
+    font-family: 'AvertaRegular';
+}
+
+.title {
+    font-size: 50px;
+}
+
+header.top-header {
+    background-color: #b3a9a94f;
+}
+
+button.btn.btn-client {
+    padding: 1px 15px;
+    border-radius: 15px;
+}
+
+button.btn.btn-\#074c49 {
+    background-color:#074c49;
+    color:white;
+}
+
+.bg-\#a8cf3f {
+    background-color:#a8cf3f;
+}
+
+.div-specialization {
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 10px 40px 10px 40px;
+}
+
+.bg-\#074c49 {
+    background-color:#074c49;
+}
+
+.bg-\#f0f2f3 {
+    background-color:#f0f2f3;
+}
+
+.div-solutions {
+    border-top-left-radius: 60px 60px;
+    border-bottom-right-radius: 60px 60px;
+}
+
+img.img-solutions {
+    border-top-left-radius: 60px 60px;
+}
+
+.div-info-solutions {
+    height: 200px;
+}
+
+.main-banner {
+    background-image: url('../img/background-image.jpeg')!important;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+}
+
+ul.who-we-are {
+    padding-left: 0px;
+}
+
+ul.who-we-are li {
+    list-style: none;
+    padding: 4px 30px;
+    background-image: url('../img/arrrow-right-light-green.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 15px;
+}
+
+section.div-ndpm {
+    /* background-image: url('../img/img-background.png')!important; */
+    background-image: linear-gradient(35deg, rgb(168 207 63 / 60%) 0%, rgb(168 207 63 / 89%) 73%), url('../img/img-background.png')!important;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, top;
+}
+
+
+p.banner-description {
+    width: 800px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+section.header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+
+img#circle-img-dark-green {
+    position: absolute;
+    width: 500px;
+    right: -40px;
+    bottom: -220px;
+}
+
+img#circle-img-light-green {
+    width: 400px;
+    position: absolute;
+    top: -101px;
+    left: 0;
+}
+
+img#background-img-1 {
+    position: absolute;
+    bottom: -80px;
+    right: -154px;
+    width: 467px;
+}
+
+img#background-img-2 {
+    position: absolute;
+    top: 195px;
+    right: -94px;
+    width: 282px;
+}
+
+.div-img-who-we-are {
+    padding-right:0px
+}
+
+img.floating-img-01 {
+    position: absolute;
+    top:120px;
+    left:40px
+}
+
+img.floating-img-02 {
+    position: absolute;
+    bottom:120px;
+    left:100px
+    
+}
+
+img.floating-img-03 {
+    position: absolute;
+    top:200px;
+    right:0
+}
+
+.color-\#084c49 {
+    color:#084c49;
+}
+
+.p-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+button.btn.btn-learnmore {
+    border: 1px solid #084c49;
+    color: #084c49;
+    padding: 13px 30px!important;
+}
+
+button.btn.btn-learnmore:hover {
+    border: 1px solid #084c49;
+    color: #ffffff;
+    background-color: #084c49;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color:#E46386 !important;
+    color: white !important;
+}
+
+.video-js .vjs-control-bar {
+    display: none;
+    width: 100%;
+    position: unset!important;
+    left: 0;
+    right: 0;
+    /* height: 3em; */
+    background-color: transparent!important;
+}
+.form-label {
+    width: 300px; 
+    background-color: transparent; 
+    border-radius: 30px; 
+    color: white;
+     border-color: white;
+}
+
+
+
+.form-submit {
+    width: 300px;
+     background-color: white; 
+     color: #973070; 
+     border-radius: 15px;
+      border-color: white;
+}
+
+.text-area-design {
+    min-height: 0;
+    width: 100%;
+    padding: 0 0 8px;
+    margin: 0;
+    border-radius: 0px !important;
+    -ms-overflow-style: none;
+    overflow: auto !important;
+}
+@media only screen and (max-width: 767px) {
+      .video-js .vjs-tech {
+        position: unset!important;
+        overflow-y: unset!important;
+      }
+    }
+
+
+   

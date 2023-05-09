@@ -1,0 +1,183 @@
+@font-face {
+    font-family: "AvertaExtraBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-ExtraBold.ttf");
+}
+
+input::placeholder {
+    color: white !important;
+    opacity: 85% !important;
+  }
+@font-face {
+    font-family: "AvertaRegular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AvertaBlack";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Black.ttf");
+}
+
+@font-face {
+    font-family: "AvertaLight";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Light.ttf");
+}
+
+@font-face {
+    font-family: "AvertaBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Bold.ttf");
+}
+
+@font-face {
+    font-family: "AvertaSemiBold";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Averta-Semibold.ttf");
+}
+
+a.nav-link{
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+
+.f-30 {
+    font-size: 30px;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.AvertaSemiBold {
+    font-family: 'AvertaSemiBold';
+}
+
+.AvertaLight {
+    font-family: 'AvertaLight';
+}
+
+.AvertaBold {
+    font-family: 'AvertaBold';
+}
+
+.AvertaBlack {
+    font-family: 'AvertaBlack';
+}
+
+::placeholder {
+    color: white;
+}
+
+.AvertaExtraBold {
+    font-family: 'AvertaExtraBold';
+}
+
+.AvertaRegular{
+    font-family: 'AvertaRegular';
+}
+
+.title {
+    font-size: 50px;
+}
+
+ul#ul-navigation-footer li {
+    padding-right:5px!important;
+    padding-left:5px!important;
+}
+
+@media only screen and (max-width: 991px) {
+    div#navbar {
+        position: absolute;
+        background: #e3426f;
+        z-index: 99999;
+        left: -91px;
+        right: 0;
+        top: 49px;
+    }
+
+
+    div#mobile-between {
+        justify-content: space-between!important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        align-items: center!important;
+    }
+
+    section.header.header-2nd {
+        background-color: #e56387!important;
+    }
+
+    h2#mobile-show {
+        display: block!important;
+    }
+
+    section.header.hide-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    ul#ul-navigation-footer li {
+        padding-right:5px!important;
+        padding-left:5px!important;
+    }
+
+    div#footer-div-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    div#footer-div-logo {
+        display: flex;
+        justify-content: center;
+    }
+    
+    ul#ul-navigation-footer {
+        display: block!important;
+    }
+
+    div#footer-menu {
+        display: flex;
+        justify-content: center!important;
+    }
+    
+    ul#ul-navigation-footer li a {
+        text-align:center;
+    }
+    
+    ul#ul-navigation-footer {
+         padding:0px!important;
+    }
+}
+
+/* .video-js .vjs-control-bar {
+    display: none;
+    width: 100%;
+    position: unset!important;
+    left: 0;
+    right: 0;
+    height: 3em;
+    background-color: transparent!important;
+    background-color: transparent!important;
+} */
+
+/* .video-js .vjs-tech {
+    position: unset!important;
+} */
+/* .vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+    position: absolute!important;
+    z-index: 99999999999999999!important;
+    bottom: 0px!important;
+    visibility: visible!important;
+    opacity: 0!important;
+    transition: visibility 1s, opacity 1s!important;
+} */

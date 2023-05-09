@@ -3,97 +3,335 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RSVP</title>
+  <link rel="icon" href="./img/final-logo.png" type="image/icon type">
+  <title>She Got Next</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/landing.css">
   <link rel="stylesheet" href="css/animation.css">
-
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
 </head>
 <body>
-  <section class="header ">
-
-    <header class="header py-1">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container justify-content-center">
-          <a class="navbar-brand" href="#">
-            <img src="./img/jovadi_logo.png" width="130" alt="main_logo">
-          </a>
+  <style>
+    @media only screen and (max-width: 767px) {
+      .video-js .vjs-tech {
+        position: unset!important;
+      }
+    }
+  </style>
+  <section class="header bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center p-2">
+          <img src="./img/logoghn.png" width="90px" alt="">
         </div>
-      </nav>  
-    </header>
+      </div>
+    </div>
   </section>
-  <section class="banner-section overflow-hidden">
-    <div class="main-banner position-relative">
-      <div class="container">
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-header">
-                <h3>RSVP FORM</h3>
+  <section class="header hide-mobile" style="background-color:#e56387">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center p-2">
+         <h2 class="text-white AvertaExtraBold">She Got Next</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="header header-2nd" style="background-color:#f083a2; position:relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center" id="mobile-between">
+          <h2 class="text-white AvertaExtraBold mb-0" id="mobile-show" style="display:none">She Got Next</h2>
+          <nav class="navbar navbar-expand-lg py-0">
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="container">
+             
+      
+             <div id="tab-mobile">
+              <div class="collapse navbar-collapse justify-content-between" id="navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 text-white" id="ul-navigation">
+                  <li class="nav-item" id="ul-navigation">
+                    <a class="nav-link text-dark AvertaBold text-white" href="landing.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark AvertaBold text-white" href="landing.html#location">Location</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link text-dark AvertaBold text-white" href="landing.html#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark AvertaBold text-white" href="landing.html#speakers">Speakers</a>
+                  </li>
+    
+                </ul>
+                
               </div>
-              <div class="card-body">
-                <form>
-                  <div class="form-group">
-                    <div>
-                      <div class="row">
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                          <label for="firstname">First Name</label>
-                          <input type="text" class="form-control" id="firstname" name="firstname" required>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                            <label for="lastname">Last Name</label>
-                            <input type="text" class="form-control" id="lastname" name="lastname" required>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="contact">Contact Number</label>
-                    <input type="tel" class="form-control" id="contact" name="contact" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" name="address" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="country">Country</label>
-                    <!-- <select class="form-control" id="country" name="country" required>
-                      <option value="">Select Country</option>
-                      <option value="us">United States</option>
-                      <option value="ca">Canada</option>
-                      <option value="mx">Mexico</option>
-                      <option value="uk">United Kingdom</option>
-                      <option value="au">Australia</option>
-                      <option value="jp">Japan</option>
-                      <option value="cn">China</option>
-                    </select> -->
-                    <input type="text" class="form-control" id="country" name="country" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary mt-2">Submit</button>
-                </form>
-              </div>
-              
-            </div>
-            <div class="d-flex justify-content-center">
-             <a href="form.html"><button type="button" class="btn btn-primary">I will Attend</button></a>
-             <a href="index.html"><button type="button" class="btn btn-secondary">I will not Attend</button></a>
-            </div>
+             </div>
             
-           
+            </div>
+          </nav>  
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="position-relative">
+    <div class="d-flex justify-content-center">
+      <video id="myVideo" class="video-js" style="width: 100%; height: auto; position:relative" controls autoplay muted loop playsinline preload="auto">
+        <source src="./video/she's_got_next.mp4" type="video/mp4" />
+        <source src="./video/she's_got_next.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <section class="" id="location">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-12 py-5">
+          <h1 class="AvertaBold title">
+            Welcome to <span style="color:#e56387">She's Got Next 2023!</span><br>
+            The NKSFB Wealth Summit
+          </h1>
+  
+          <h4 class="AvertaRegular mt-5 subtitle">
+            Wednesday, June 21, 10am - 2pm <br>
+            Nassau Bahamas
+          </h4>
+  
+          <h4  class="AvertaBold mt-5 subtitle">
+            The NKSFB Wealth Summit:
+          </h4>
+          <span class="AvertaRegular f-14">June 19th - Opening Reception: The NKSFB Wealth Summit (Evening)</span><br>
+          <span class="AvertaRegular f-14">June 20th - General Session: The NKSFB Wealth Summit (9am – 3pm)</span><br>
+          <span class="AvertaRegular f-14">* Includes Breakfast and Lunch – Schedule to follow</span><br>
+          <span class="AvertaRegular f-14">June 21st – Mens’ Sports Outing/She’s GotNext</span>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12 py-5">
+          <h3 class="AvertaBold d-flex align-items-center subtitle">
+            <svg style="width:30px; margin-right:10px" id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g clip-rule="evenodd" fill-rule="evenodd"><path d="m255.999-.001c-141.16 0-255.998 114.839-255.998 255.999 0 141.161 114.838 256.001 255.998 256.001 141.159 0 256.002-114.84 256.002-256.001 0-141.159-114.843-255.999-256.002-255.999z" fill="#ff57cc"/><path d="m272.647 511.443c118.041-7.616 214.55-95.581 235.242-209.633l-172.718-172.718c-19.588-21.546-47.828-35.093-79.172-35.093-59.002 0-106.998 48-106.998 107.001 0 27.47 13.288 50.869 26.288 70.128l60.568 89.75c-16.92.8-32.539 2.591-45.228 5.26-14.713 3.079-34.251 8.83-34.251 23.061 0 4.894 2.309 8.786 5.937 11.911z" fill="#e224ba"/><g fill="#fefefe"><path d="m255.999 398c-37.232 0-62.761-4.761-74.238-8.8 11.477-4.03 37.006-8.791 74.238-8.791s62.761 4.762 74.242 8.791c-11.481 4.038-37.01 8.8-74.242 8.8zm-64.139-138.061c-11.873-17.601-22.859-36.92-22.859-58.94 0-47.971 39.029-87.001 86.998-87.001 47.968 0 87.002 39.03 87.002 87.001 0 22.02-10.991 41.339-22.864 58.94l-64.138 95.039zm129.518 106.2c-12.699-2.67-28.317-4.461-45.242-5.26l60.582-89.75c12.991-19.259 26.284-42.658 26.284-70.128 0-59.001-48.001-107.001-107.003-107.001s-106.998 48-106.998 107.001c0 27.47 13.288 50.869 26.288 70.128l60.568 89.75c-16.92.8-32.539 2.591-45.228 5.26-14.713 3.079-34.251 8.83-34.251 23.061 0 14.24 19.538 19.989 34.251 23.07 17.609 3.7 40.831 5.731 65.37 5.731s47.761-2.031 65.379-5.731c14.699-3.081 34.241-8.83 34.241-23.07 0-14.231-19.543-19.982-34.241-23.061z"/><path d="m288.905 219.999c-10.477 18.141-33.756 24.379-51.907 13.91-18.142-10.481-24.378-33.77-13.911-51.91 10.481-18.15 33.77-24.38 51.912-13.91 8.788 5.08 15.081 13.27 17.699 23.07 2.632 9.809 1.278 20.051-3.793 28.84zm23.114-34.009c-4.01-14.971-13.599-27.472-27.02-35.22-27.699-15.99-63.242-6.471-79.233 21.229-15.986 27.691-6.458 63.24 21.232 79.231 9.114 5.258 19.071 7.75 28.902 7.75 20.057 0 39.6-10.4 50.327-28.98 7.74-13.421 9.801-29.052 5.792-44.01z"/></g></g></svg>
+            Location</h3>
+          <h4 class="AvertaBold mt-4 subtitle f-14">Baha Mar, The Grand Hyatt Hotel</h4>
+          <p class="AvertaRegular">Nassau, Bahamas</p>
+          <span class="AvertaRegular">PLEASE READ TRAVEL INFORMATION</span>
+          
+          <p class="AvertaRegular mt-3 f-14">Bahamas are not a part of USA. A valid passport is required to travel to Bahamas</p>
+          <p class="AvertaRegular">The airport in Nassau frequently has lines up to 3 hours for security and customs. To significantly reduce this time, we strongly encourage you to:</p>
+
+          <span class="AvertaRegular f-14">
+            A. Apply for TSA Precheck
+            <a href="https://www.tsa.gov/precheck" target="_blank" class="AvertaRegular text-decoration-none" style="color:#e56387">https://www.tsa.gov/precheck</a>
+          </span><br>
+          <span class="AvertaRegular f-14">
+            B. Download Mobile Passport
+            <a href="https://www.cbp.gov/travel/us-citizens/mobile-passport-control" target="_blank" class="AvertaRegular text-decoration-none" style="color:#e56387">https://www.cbp.gov/travel/us-citizens/mobile-passport-control</a>
+          </span><br>
+          <span class="AvertaRegular f-14">
+            C. Apply for Clear
+            <a href="https://www.clearme.com/" target="_blank" class="AvertaRegular text-decoration-none" style="color:#e56387">https://www.clearme.com/</a>
+          </span><br>
+          <span class="AvertaRegular f-14">
+            D. Apply for Global Entry to skip the immigration line (application takes 2+ months - apply now)
+            <a href="https://ttp.dhs.gov/" target="_blank" class="AvertaRegular text-decoration-none" style="color:#e56387">https://ttp.dhs.gov/</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5" id="speakers">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center mb-4">
+          <h1 class="AvertaExtraBold text-center title">
+            Speakers
+          </h1>
+        </div>
+
+        <div class="speaker_slider_area owl-carousel">
+          <div class="box-area">	
+            <h5 class="text-center AvertaRegular subtitle">Tiffany Burns</h5>
+            <p class="AvertaRegular text-center f-14">(NFL wife/mom, Managing Partner ATL & Head of Retail/Consumer, McKinsey/Founder McKinsey Global Black Economic Mobility Institute)</p>
+          </div> 
+
+          <div class="box-area">	
+            <h5 class="text-center AvertaRegular subtitle">Nicole Watson</h5>
+            <p class="AvertaRegular text-center f-14">(Media & Broadcasting Professor, Former Host Inside the NFL on HBO, Sports Commentator), Cori Murray (Podcaster, on-air host and Former Entertainment/ Editor, Essence)</p>
+          </div> 
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Pastor Wade, (D-Wade’s mom),Merlene Blair Brown </h5>
+            <p class="AvertaRegular text-center f-14">Therapist (Virtual/All guest given complimentary 30 min session)</p>
+          </div>
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Greta Warren</h5>
+            <p class="AvertaRegular text-center f-14">(Wife of President Chicago Bears, formerly Big 10 Commissioner, CEO Minn Vikings and General Counsel NFL – mom of premiere athlete)</p>
+          </div>
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Kiya Tomlin</h5>
+            <p class="AvertaRegular text-center f-14">(wife of Steelers Coach, formerly coach of 3 other NFL teams, mom of premiere athlete, and owner/designer of a successful clothing line)</p>
+          </div>
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Sydel Curry Lee</h5>
+            <p class="AvertaRegular text-center f-14">(wife of player Damion Lee, sister of Steph and Seth Curry, daughter of Dale Curry, sister-in-law Ayesha Curry, sister-in-law Doc River’s daughter, social media influencer)</p>
+          </div>
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Savannah James</h5>
+            <p class="AvertaRegular text-center f-14">(wife of LeBron and CEO of family business & Foundation)</p>
+          </div>
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Jill, Craig NKSFB</h5>
+            <p class="AvertaRegular text-center f-14">(video) Womanger- Business Manager- Financial Advisor- Agent</p>
+          </div>
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Lori Lawren</h5>
+            <p class="AvertaRegular text-center f-14">(Psychiatrist - Virtual)</p>
+          </div>
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Eudoxie Bridges</h5>
+            <p class="AvertaRegular text-center f-14">(Influencer and wife of Ludacris) and Luda's Mom</p>
+          </div>
+
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Marcia Dyson</h5>
+            <p class="AvertaRegular text-center f-14">(wife of Eric Dyson)</p>
+          </div>    
+          
+          <div class="box-area">
+            <h5 class="text-center AvertaRegular subtitle"> Jemele Hill</h5>
+            <p class="AvertaRegular text-center f-14">(Sports Journalist/ESPN)</p>
           </div>
         </div>
+       
+      </div>
     </div>
-      
-      <!-- Bootstrap JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-P6j4q6th48HvUM8WZgKkMavqqeSPTTbTCE8yJpnsjKlTidT9XRUvCzZcKj1nLzFQj+HUxN8zzw7V1+QJQ2/9FA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
-</html>
+  </section>
+  <section id="gallery">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <h1 class="AvertaExtraBold title">Gallery</h1>
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-1.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-2.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-3.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-4.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-5.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-6.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-7.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-8.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-9.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-10.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-11.jpg" width="100%" alt="">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mt-4">
+          <img src="./img/gallery/gal-12.jpg" width="100%" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #f8cbd8;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12" id="footer-div-logo">
+          <img src="./img/logoghn.png" width="90px" alt="">
+        </div>
+        <div class="col-lg-8 col-md-8 col-12 d-flex justify-content-end py-3" id="footer-menu">
+          <ul class="d-flex" id="ul-navigation-footer" style="list-style-type: none;">
+            <li class="nav-item px-4" id="ul-navigation-footer">
+              <a class="nav-link text-dark AvertaBold" href="landing.html">Home</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-dark AvertaBold" href="landing.html#location">Location</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-dark AvertaBold" href="landing.html# gallery">Gallery</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link text-dark AvertaBold " href="landing.html#speakers">Speakers</a>
+            </li>
 
-    
-    
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pb-3">
+          <span class="AvertaRegular">© Copyright 2023 She Got Next. All rights reserved.</span>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+
+ 
+  <script>
+    var player = videojs('myVideo');
+    player.play();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+  <script>
+      $(".speaker_slider_area").owlCarousel({
+      autoplay: true,
+      slideSpeed:1000,
+      items : 3,
+      loop: true,
+      nav:false,
+      margin: 30,
+      dots: true,
+      responsive:{
+        320:{
+          items:1
+        },
+        767:{
+          items:2
+        },
+        600:{
+          items:2
+        },
+        1000:{
+          items:3
+        }
+      }
+      
+    });
+  </script>
+
+</body>
+</html>

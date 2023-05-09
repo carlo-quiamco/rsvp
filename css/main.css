@@ -250,9 +250,31 @@ button.btn.btn-learnmore:hover {
     background-color: #084c49;
 }
 
+input[type="checkbox"]:checked + label {
+    background-color:#E46386 !important;
+    color: white !important;
+}
+
+a {
+    text-decoration: none;
+   
+  }
+
+
+@media only screen and (max-width: 768px) {
+    .video-js .vjs-control-bar {
+        display: none;
+        width: 100%;
+        position: unset!important;
+        left: 0;
+        right: 0;
+       
+        background-color: transparent!important;
+    }
+}
 
 @media only screen and (max-width: 767px) {
-      .video-js .vjs-tech {
-        position: unset!important;
-      }
+    .video-js .vjs-tech {
+    position: unset!important;
     }
+}
